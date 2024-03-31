@@ -113,6 +113,8 @@ void AGIS_Cam_GreyCharacter::Move(const FInputActionValue& Value)
 		// add movement 
 		//AddMovementInput(ForwardDirection, MovementVector.Y);
 		AddMovementInput(RightDirection, MovementVector.X);
+		UE_LOG(LogTemp, Warning, TEXT("MovementVector.X : % f"), MovementVector.X)
+
 	}
 }
 
